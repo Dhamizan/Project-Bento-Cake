@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar With Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="adminuploadpage.css">
+</head>
+<body>
+    <div class="wrapper">
+        <aside id="sidebar">
+            <div class="d-flex" style="border-bottom: 1.5px solid #FFF8F9;">
+                <button class="toggle-btn" type="button">
+                    <img src="foto/menu.png" style="width: 30px; margin: 0px -15px 0px -3.5px;" alt="">
+                </button>
+                <div class="sidebar-logo">
+                    <h5 style="color: #FFF8F9; margin-top: 11px;">Beranda</h5>
+                </div>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="admindashboard.html" class="sidebar-link">
+                        <img src="foto/dashboard.png" alt="">
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="admindatapenjualan.html" class="sidebar-link">
+                        <img src="foto/datapenjualan.png" alt="">
+                        <span>Data Penjualan</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="admingrafik.html" class="sidebar-link">
+                        <img src="foto/grafik.png" alt="">
+                        <span>Grafik Penjualan</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="adminuploadpage.html" class="sidebar-link">
+                        <img src="foto/upload.png" alt="">
+                        <span>Upload Kue</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="admineditpage.html" class="sidebar-link">
+                        <img src="foto/edit.png" alt="">
+                        <span>Edit Kue</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="login_admin.html" class="sidebar-link">
+                    <img src="foto/logout.png" alt="">
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+        <div class="main p-3" id="konten">
+            <div class="row" id="head">
+                <div id="judul" class="col">
+                    <h1>Upload Kue</h1>
+                </div>
+                <div id="logo" class="col">
+                    <img src="foto/logobento.png" alt="">
+                </div>
+            </div>
+            <div class="uploadcake">
+                <label for="">Nama Kue</label>
+                <input type="text" name="" placeholder="Masukkan Nama Kue" id="nama">
+                <br>
+                <label for="">Deskripsi</label>
+                <input type="text" placeholder="Masukkan Deskripsi">
+                <br>
+                <label for="">Harga</label>
+                <input type="text" placeholder="Masukkan Harga">
+                <br>
+                <div class="uploadkue">
+                    <label for="">Upload Foto</label><br>
+                    <div class="contain" style="height: 200px;">
+                        <button><img src="foto/aa.png" style="object-fit: cover;" alt=""></button>
+                    </div>
+                    <div class="btnsubmit">
+                        <button>Upload</button>
+                        <button>Batal</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="admin.js"></script>
+</body>
+
+</html>
