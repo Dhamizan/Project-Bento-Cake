@@ -64,11 +64,13 @@
     #sidebar {
         width: 70px;
         min-width: 70px;
+        height: 100%;
         z-index: 1000;
         transition: all .25s ease-in-out;
         background-color: #FF78C4;
         display: flex;
         flex-direction: column;
+        position: fixed;
     }
 
     .sidebar-link span{
@@ -180,8 +182,8 @@
         margin-right: -13px;
     }
 
-    #konten img{
-        width: 80px;
+    #konten{
+        margin-left: 70px;
     }
 
     #head{
@@ -198,6 +200,7 @@
     .uploadcake label{
         color: #535353;
         margin-bottom: 5px;
+        font-weight: 400;
     }
 
     .uploadcake input{
@@ -209,6 +212,7 @@
 
     .uploadcake input:focus{
         border: 1.5px solid #FBDB6D;
+        outline: none;
     }
 
     .uploadcake input::placeholder{
@@ -255,3 +259,216 @@
         flex-direction: row-reverse;
         margin-top: -25px;
     }
+
+@media (min-width: 600px){
+    .uploadcake{
+        display: grid;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .uploadcake label{
+        color: #535353;
+        margin-bottom: 5px;
+        font-weight: 400;
+    }
+
+    .uploadcake input{
+        border: 1.5px solid #FF78C4;
+        border-radius: 10px;
+        width: 85%;
+        height: 40px;
+    }
+
+    .uploadcake input:focus{
+        border: 1.5px solid #FBDB6D;
+        outline: none;
+    }
+
+    .uploadcake input::placeholder{
+        color: #535353;
+        opacity: 50%;
+    }
+
+    .uploadcake input[type=text]{
+        padding: 15px;
+    }
+
+    .contain button{
+        width: 30%; 
+        height: 100%; 
+        background-color:#FFFFFF; 
+        border: 1.5px solid #FF78C4; 
+        border-radius: 10px;
+    }
+    .btnsubmit button{
+        background-color:#FF78C4;
+        color:#FFF8F9;
+        border: none;
+        width: 80px;
+        height: 30px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border-radius: 8px;
+        transition: all ease-in-out 0.2s;
+        margin-left: 15px;
+    }
+
+    .btnsubmit button:hover{
+        background-color:#FBDB6D;
+        color:#FFF8F9;
+        border: none;
+        width: 80px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border-radius: 8px;
+    }
+
+    .btnsubmit{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: -25px;
+    }
+}
+
+@media (min-width: 430px){
+    .uploadcake{
+        display: grid;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .uploadcake label{
+        color: #535353;
+        margin-bottom: 5px;
+        font-weight: 400;
+    }
+
+    .uploadcake input{
+        border: 1.5px solid #FF78C4;
+        border-radius: 10px;
+        width: 85%;
+        height: 40px;
+    }
+
+    .uploadcake input:focus{
+        border: 1.5px solid #FBDB6D;
+        outline: none;
+    }
+
+    .uploadcake input::placeholder{
+        color: #535353;
+        opacity: 50%;
+    }
+
+    .uploadcake input[type=text]{
+        padding: 15px;
+    }
+
+    .contain button{
+        width: 30%; 
+        height: 100%; 
+        background-color:#FFFFFF; 
+        border: 1.5px solid #FF78C4; 
+        border-radius: 10px;
+    }
+    .btnsubmit button{
+        background-color:#FF78C4;
+        color:#FFF8F9;
+        border: none;
+        width: 80px;
+        height: 30px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border-radius: 8px;
+        transition: all ease-in-out 0.2s;
+        margin-left: 15px;
+    }
+
+    .btnsubmit button:hover{
+        background-color:#FBDB6D;
+        color:#FFF8F9;
+        border: none;
+        width: 80px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border-radius: 8px;
+    }
+
+    .btnsubmit{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: -25px;
+    }
+}
+
+@media (min-width: 375px){
+    .uploadcake{
+        display: grid;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .uploadcake label{
+        color: #535353;
+        margin-bottom: 5px;
+        font-weight: 400;
+    }
+
+    .uploadcake input{
+        border: 1.5px solid #FF78C4;
+        border-radius: 10px;
+        width: 67%;
+        height: 40px;
+    }
+
+    .uploadcake input:focus{
+        border: 1.5px solid #FBDB6D;
+        outline: none;
+    }
+
+    .uploadcake input::placeholder{
+        color: #535353;
+        opacity: 50%;
+    }
+
+    .uploadcake input[type=text]{
+        padding: 15px;
+    }
+
+    .contain button{
+        width: 30%; 
+        height: 100%; 
+        background-color:#FFFFFF; 
+        border: 1.5px solid #FF78C4; 
+        border-radius: 10px;
+    }
+    .btnsubmit button{
+        background-color:#FF78C4;
+        color:#FFF8F9;
+        border: none;
+        width: 80px;
+        height: 30px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border-radius: 8px;
+        transition: all ease-in-out 0.2s;
+        margin-left: 15px;
+    }
+
+    .btnsubmit button:hover{
+        background-color:#FBDB6D;
+        color:#FFF8F9;
+        border: none;
+        width: 80px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border-radius: 8px;
+    }
+
+    .btnsubmit{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: -25px;
+    }
+}
