@@ -133,34 +133,11 @@
         height: 1.8em;
         background-image: url(foto/menupink.png) ;
     }
-    /* Konten */
-    .konteniklan{
-        z-index: 1;
-        display: contents;
-        position: absolute;
-    }
-    
-    .konteniklan .carousel-inner{
-        text-align: center;
-        width: 100%;
-    }
-    
-    .konteniklan .carousel-item{
-        width: 75%;
-        margin: 10% 0% 0% 10%;
-        height: auto;
-        object-fit: cover;
-    }
-    
-    .konteniklan .latar{
-        width: 100%;
-        position: absolute;;
-    }
     
     /*About Us*/
 
     .about{
-        margin-top: 20%;
+        margin-top: 120px;
         margin-left: 20%;
         margin-right: 20%;
     }
@@ -205,6 +182,21 @@
     .infoend img{
         width: 100%;
     }
+
+    /*Animasi Transisi*/
+    .reveal{
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: all 2s ease;
+    }
+    
+    .reveal.active{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+
     @media (max-width: 992px){
         /*navbar*/
 
