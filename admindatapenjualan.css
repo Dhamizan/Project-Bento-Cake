@@ -64,11 +64,13 @@
     #sidebar {
         width: 70px;
         min-width: 70px;
+        height: 100%;
         z-index: 1000;
         transition: all .25s ease-in-out;
         background-color: #FF78C4;
         display: flex;
         flex-direction: column;
+        position: fixed;
     }
 
     .sidebar-link span{
@@ -186,8 +188,8 @@
         margin-right: -13px;
     }
 
-    #konten img{
-        width: 80px;
+    #konten{
+        margin-left: 70px;
     }
 
     #head{
@@ -204,6 +206,7 @@
         width: 90%;
         border-radius: 20px 20px 20px 20px;
         box-shadow: 0px 0px 10px 2px #00000016;
+        font-size: 20px;
     }   
 
     .contain{
@@ -249,3 +252,21 @@
     #dropdownbtn:hover{
         background-color: #FBDB6D; color: #FFF8F9;
     }
+
+@media (max-width: 430px){
+    .tabel{
+        width: 90%;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 0px 0px 10px 2px #00000016;
+        font-size: 10px;
+    }   
+}
+
+@media (max-width: 375px), (max-width: 300px){
+    .tabel{
+        width: 90%;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 0px 0px 10px 2px #00000016;
+        font-size: 8px;
+    }   
+}
