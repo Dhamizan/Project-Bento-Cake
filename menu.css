@@ -143,11 +143,12 @@
     
     .menu{
         margin-top: 2%;
+        z-index: 1;
     }
 
     .menu .container .row {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         gap: 10px;
         justify-content: center;
         margin: 30px;
@@ -162,9 +163,9 @@
       
     .menu .container .col3 img {
         max-width: 100%;
-        max-height: 200px;
+        max-height: 150px;
         width: 100%;
-        height: 100%;
+        height: 150px;
         object-fit: cover;
       }
       
@@ -243,13 +244,18 @@
 
     #search input[type="text"]{
         padding: 3px;
+        padding-left: 10px;
         color: #FF78C4;
+        height: 40px;
+        margin-left: 10px;
     }
 
     #search input[type="submit"]{
         padding: 3px;
         color: #FF78C4;
         transition: all ease-in-out 0.2s;
+        margin-left: 12px;
+        height: 40px;
     }
 
     #search input[type="submit"]:hover{
@@ -259,29 +265,38 @@
         color: #FFF8F9;
     }
 
-    
     #searchkue{
         display: flex;
-        justify-content: space-between;
-    }
-    
-    #kliksearch{
-        display: flex;
-        gap: 10px;
-        width: 100%;
-    }
-
-    #submit{
-        margin-left: -35px;
+        gap: 0px;
+        width: 50%;
+        margin-left: 40px;
     }
 
     #cartp{
-        margin-right: 45px;
+        margin-left: 10px;
+        margin-top: 5px;
     }
+
+    .containdropdown{
+        width: 200%;
+        height: 100px;
+    }
+
+    #dropdownbtn{
+        background-color: #FF78C4; color: #FFF8F9;
+        transition: all ease-in-out 0.2s;
+        height: 40px;
+    }
+
+    #dropdownbtn:hover{
+        background-color: #FBDB6D; color: #FFF8F9;
+    }
+
     /*Akhir*/
 
     .infoend{
         margin-top: 3%;
+        z-index: 1;
     }
     
     .infoend img{
@@ -291,6 +306,20 @@
     .infoend img{
         width: 100%;
     }
+
+    /*Animasi Transisi*/
+    .reveal{
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: all 2s ease;
+    }
+    
+    .reveal.active{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
     @media (max-width: 848px){
         /*navbar*/
 
@@ -400,7 +429,7 @@
         /* Menu */
         .menu .container .row {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 10px;
             justify-content: center;
             margin: 30px;
@@ -415,16 +444,16 @@
           
         .menu .container .col3 img {
             max-width: 100%;
-            max-height: 200px;
+            max-height: 100px;
             width: 100%;
-            height: 100%;
+            height: 100px;
             object-fit: cover;
           }
+          
 
         .card-body{
             background-color: #ffffff;
-            width: 110%;
-            height: auto;
+            width: 100%;
             overflow: hidden;
             border-radius: 20px;
             transition: all ease-in-out 0.2s;
@@ -432,13 +461,10 @@
 
         .card-body:hover{
             background-color: #ffffff;
-            width: 112%;
-            height: auto;
             overflow: hidden;
             border-radius: 20px;
             box-shadow: 0px 0px 10px 2px #53535311; 
           }
-
 
         .card-info{
             margin: 5px 0px 5px 10px;
@@ -456,7 +482,7 @@
         }
 
         #bintang{
-            margin-top: -15px;
+            margin-top: -25px;
             margin-left: -11px;
         }
     
@@ -493,7 +519,6 @@
         }
     
         #search input[type="text"]{
-            padding: 3px;
             color: #FF78C4;
         }
     
@@ -501,6 +526,7 @@
             padding: 3px;
             color: #FF78C4;
             transition: all ease-in-out 0.2s;
+            margin-left: 45px;
         }
     
         #search input[type="submit"]:hover{
@@ -531,7 +557,7 @@
 
     }
 
-    @media (max-width: 576px){
+    @media (max-width: 430px){
         /*navbar*/
 
         .container-fluid{
@@ -641,7 +667,7 @@
         .menu .container .row {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
+            gap: 40px;
             justify-content: center;
             margin: 60px;
           }
@@ -650,30 +676,30 @@
             flex: 1;
             margin-bottom: 25px;
             font-size: 14px;
-            width: 120%;
+            width: 140%;
           }
           
         .menu .container .col3 img {
             max-width: 100%;
-            max-height: 60px;
+            max-height: 80px;
             width: 100%;
-            height: 100%;
+            height: 80px;
             object-fit: cover;
           }
         .card-body{
             background-color: #ffffff;
-            width: 150%;
+            width: 120%;
             height: auto;
             overflow: hidden;
             border-radius: 15px;
-            margin-left: -24%;
+            margin-left: -10%;
             margin-bottom: -50%;
             transition: all ease-in-out 0.2s;
           }
 
         .card-body:hover{
             background-color: #ffffff;
-            width: 152%;
+            width: 122%;
             height: auto;
             overflow: hidden;
             border-radius: 20px;
@@ -710,7 +736,7 @@
         }
 
         #search{
-            margin-left: 5px;
+            margin-left: -25px;
         }
 
         #search .search{
@@ -740,11 +766,17 @@
         #search input[type="text"]{
             padding: 5px 5px 5px 10px;
             color: #FF78C4;
+            font-size: 10px;
+            font-weight: 500;
+            height: 33px;
         }
     
         #search input[type="submit"]{
             padding: 5px;
             color: #FF78C4;
+            font-size: 10px;
+            font-weight: 500;
+            height: 33px;
             transition: all ease-in-out 0.2s;
         }
     
@@ -758,22 +790,13 @@
         #searchkue{
             display: flex;
             justify-content: space-between;
+            margin-bottom: -100px;
         }
         
         #kliksearch{
             display: flex;
             gap: 10px;
             width: 100%;
-        }
-    
-        #submit{
-            margin-left: -39px;
-        }
-
-        .carikue{
-            width: 150px;
-            font-size: 10px;
-            font-weight: 500;
         }
 
         .submitsearch{
@@ -784,6 +807,24 @@
     
         #cartp{
             width: 10%;
+            margin-left: 20px;
+            margin-top: 1px;
+        }
+
+        .containdropdown{
+            width: 200%;
+            height: 100px;
         }
         
+        #dropdownbtn{
+            background-color: #FF78C4; color: #FFF8F9;
+            transition: all ease-in-out 0.2s;
+            height: 32px;
+            width: 80px;
+            font-size: 12px;
+        }
+        
+        #dropdownbtn:hover{
+            background-color: #FBDB6D; color: #FFF8F9;
+        }
     }
