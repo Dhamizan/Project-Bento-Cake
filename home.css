@@ -135,38 +135,14 @@ span .navbar-toggler-icon{
     background-image: url(foto/menupink.png) ;
 }
 
-/*Isi Konten*/
-
 a{
-    text-decoration: none   ;
-}
-
-.konteniklan{
-    z-index: 1;
-    display: contents;
-    position: absolute;
-}
-
-.konteniklan .carousel-inner{
-    width: 100%;
-}
-
-.konteniklan .carousel-item{
-    width: 75%;
-    margin: 10% 0% 0% 10%;
-    height: auto;
-    object-fit: cover;
-}
-
-.konteniklan .latar{
-    width: 100%;
-    position: absolute;;
+    text-decoration: none;
 }
 
 /*About Us*/
 
 .about{
-    margin-top: 25%;
+    margin-top: 7%;
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -179,11 +155,12 @@ a{
 
 #judulabt{
     margin-top: 0px;
-    width: 57%;
+    width: 67%;
 }
 
 #modelabt{
-    width: 40%;
+    margin-top: -20px;
+    width: 30%;
     float: left;
     padding-right: 30px;
 }
@@ -208,7 +185,7 @@ a{
 /* Best Seller */
 
 .bestseller{
-    margin-top: 14%;
+    margin-top: 7%;
     overflow: hidden;
 }
 
@@ -266,7 +243,7 @@ a{
     margin: 25px 0px 25px 27px;
     width: 85%;
     height: 300px;
-    box-shadow: 0px 0px 10px 5px #53535311; 
+    box-shadow: 0px 0px 10px 2px #53535311; 
     transition: all ease-in-out 0.5s;
 }
 
@@ -295,7 +272,7 @@ a{
     margin: -30px 0% 0% 0%;
     border-radius: 20px 20px 0px 0px;
     width: 100%;
-    height: 250px;
+    height: 220px;
     object-fit: cover;
 }
 
@@ -329,7 +306,7 @@ a{
 /*testimoni*/
 
 .testimonial-box{
-    margin-top: 8%;
+    margin-top: 7%;
 }
 
 .judultestimoni{
@@ -440,6 +417,19 @@ a{
 
 .infoend img{
     width: 100%;
+}
+
+/*Animation Scroll*/
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 /*Responsif*/
@@ -672,7 +662,7 @@ a{
     margin: 25px 0px 25px 27px;
     width: 85%;
     height: 300px;
-    box-shadow: 0px 0px 10px 5px #5353535c; 
+    box-shadow: 0px 0px 10px 2px #53535311; 
     transition: all ease-in-out 0.5s;
 }
 
@@ -813,7 +803,7 @@ background-color: #FF65C2;
 @media (max-width: 430px){
 
     .about{
-        margin-top: -45%;
+        margin-top: 14%;
         margin-left: 20%;
         margin-right: 20%;
     }
@@ -839,9 +829,14 @@ background-color: #FF65C2;
     position: absolute;
 }
 
+#modelabt{
+    margin-top: 10px;
+}
+
 /*bestseller*/
 .bestseller{
     margin-top: 10%;
+    margin-left: 5%;
 }
 
 .judulbestseller{
@@ -898,7 +893,7 @@ background-color: #FF65C2;
     margin: 25px 0px 25px 27px;
     width: 85%;
     height: 300px;
-    box-shadow: 0px 0px 10px 5px #5353535c; 
+    box-shadow: 0px 0px 10px 2px #53535311; 
     transition: all ease-in-out 0.5s;
 }
 
@@ -941,15 +936,15 @@ background-color: #FF65C2;
 .bestseller .team-slider .owl-dots {
   left: 0;
   right: 0;
-  bottom: -40px;
+  bottom: 0px;
   text-align: center;
   width: 100%;
 }
 .bestseller .team-slider button.owl-dot {
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 10px;
   display: inline-block;
-  margin: 0 6px;
+  margin: 0 4px;
   text-align: center;
   border-radius: 50%;
   background-color: #FBDB6D;
@@ -963,6 +958,7 @@ background-color: #FF65C2;
 
 .testimonial-box{
     margin-top: 20%;
+    margin-left: 5%;
 }
 
 .judultestimoni{
@@ -1018,15 +1014,16 @@ font-weight: 600
 position: absolute;
 left: 0;
 right: 0;
-bottom: -60px;
+bottom: -30px;
 text-align: center;
 width: 100%;
 }
+
 .testimonial-box .team-slider button.owl-dot {
-width: 16px;
-height: 16px;
+width: 10px;
+height: 10px;
 display: inline-block;
-margin: 0 6px;
+margin: 0 4px;
 text-align: center;
 border-radius: 50%;
 background-color: #FBDB6D;
