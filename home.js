@@ -15,6 +15,23 @@ window.addEventListener("scroll", () => {
     }
 });
 
+function reveal() {
+    var reveals = document.querySelectorAll('.reveal');
+
+    for(var i = 0; i < reveals.length; i++) {
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add("active");
+        }
+    }
+}
+
+window.addEventListener("load", reveal);
+window.addEventListener("scroll", reveal);
+
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('.nav-link');
     
@@ -55,3 +72,12 @@ $(document).ready(function() {
         }
     });
 });
+const dropdownItems = document.querySelectorAll('.dropdown-menu .dropdown-item');
+
+dropdownItems.forEach(function(item) {
+    item.addEventListener('click', function() {
+        const selectedText = item.textContent;
+        document.getElementById('dropdownbtn').textContent = selectedText;
+    });
+});
+
