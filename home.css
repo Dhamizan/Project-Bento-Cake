@@ -563,7 +563,7 @@ a{
 /*About Us*/
 
 .about{
-  margin-top: -20%;
+  margin-top: 10%;
   margin-left: 20%;
   margin-right: 20%;
 }
@@ -754,12 +754,17 @@ font-size: 10px;
 .testimonial-box .img-area {
 overflow: hidden;
 padding: 30px 0px 15px;
+width: 50px;
+height: 50px;
 }
 .testimonial-box .img-area img {
 margin: 0 auto;
 -webkit-transition: all 0.5s ease;
 transition: all 0.5s ease;
-max-width: 230px
+max-width: 230px;
+width: 50px;
+height: 50%;
+object-fit: cover;
 }
 .testimonial-box .single-box:hover img {
 transform: scale(1.1);
@@ -803,7 +808,7 @@ background-color: #FF65C2;
 @media (max-width: 430px){
 
     .about{
-        margin-top: 14%;
+        margin-top: 1%;
         margin-left: 20%;
         margin-right: 20%;
     }
@@ -985,13 +990,14 @@ font-size: 10px;
 }
 .testimonial-box .img-area {
 overflow: hidden;
-padding: 30px 0px 15px;
+margin-left: 40px;
+width: 200px;
+height: auto;
 }
 .testimonial-box .img-area img {
-margin: 0 auto;
+width: 200px;
 -webkit-transition: all 0.5s ease;
-transition: all 0.5s ease;
-max-width: 230px
+transition: all 0.5s ease;  
 }
 .testimonial-box .single-box:hover img {
 transform: scale(1.1);
@@ -1002,7 +1008,7 @@ color: #ffb400;
 margin: 0 4px;
 }
 .testimonial-box .info-area h4 {
-font-weight: 600
+font-weight: 600;
 }
 .testimonial-box.info-area h5 {
 color: #3b04db;
