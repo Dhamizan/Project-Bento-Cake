@@ -1,0 +1,357 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+        *, html{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root{
+            --main-color : blue;
+            --second-color : purple;
+            --body-color : gray;
+            --main-font : 'Poppins', sans-serif;
+            --heading-font : 'Poppins', sans-serif;
+        }
+
+        body{
+            width: 100%;
+            font-family: var(--main-font);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            background-color: #FFF8F9;
+            color: #FF78C4;
+        }
+
+        ::after,
+        ::before {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        .main {
+            min-height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            transition: all 0.35s ease-in-out;
+        }
+
+        #sidebar {
+            width: 70px;
+            min-width: 70px;
+            height: 100%;
+            z-index: 1000;
+            transition: all .25s ease-in-out;
+            background-color: #FF78C4;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+        }
+
+        .sidebar-link span{
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 2px;
+            margin-left: 10px;
+            font-weight: 500;
+        }
+
+        #sidebar.expand {
+            width: 260px;
+            min-width: 260px;
+        }
+
+        .toggle-btn {
+            background-color: transparent;
+            cursor: pointer;
+            border: 0;
+            padding: 1rem 1.5rem;
+        }
+
+        .toggle-btn img {
+            width: 30px;
+            transition: margin-left 0.3s ease;
+        }
+        
+        .sidebar-logo {
+            margin: auto 0;
+        }
+
+        #sidebar:not(.expand) .sidebar-logo,
+        #sidebar:not(.expand) a.sidebar-link span {
+            display: none;
+        }
+
+        .sidebar-nav {
+            padding: 0rem 0;
+            flex: 1 1 auto;
+        }
+
+        a.sidebar-link {
+            padding: 10px 1.62rem;
+            color: #FFF8F9;
+            display: block;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            border-left: 3px solid transparent;
+            transition: margin-left 0.2s ease;
+            margin-left: -11px;
+            transition: all ease-in-out 0.3s ;
+        }
+
+        
+
+        .sidebar-link img {
+            width: 35px;
+        }
+
+        a.sidebar-link:hover {
+            background-color: #fbda6dd6;
+        }
+
+        .sidebar-item {
+            position: relative;
+        }
+
+        #sidebar.expand .sidebar-link[data-bs-toggle="collapse"]::after {
+            border: solid;
+            border-width: 0 .075rem .075rem 0;
+            content: "";
+            display: inline-block;
+            padding: 2px;
+            position: absolute;
+            right: 1.5rem;
+            top: 1.4rem;
+            transform: rotate(-135deg);
+            transition: all .2s ease-out;
+        }
+
+        #sidebar.expand .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+            transform: rotate(45deg);
+            transition: all .2s ease-out;
+        }
+        
+        #sapaadmin{
+            margin-left: 2px;
+            margin-top: -15px;
+            display: flex;
+            flex-direction: row;
+            margin-top: 0px;
+            margin-left: 5.2%;
+        }    
+
+        #jadwal{
+            display: flex;
+            flex-direction: row-reverse;
+            margin-right: 5.2%;
+        }
+
+        #judul h1{
+        margin-top: 23px;
+        }
+
+        #logo{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        #isi{
+            margin-top: 20px;
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        #isi .container{
+            display: grid;
+            text-align: center;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
+        }
+        
+        #head #judul{
+            margin-left: -12px;
+        }
+
+        .salesdata{
+            margin-left: 5.2%;
+            margin-top: 30px;
+        }
+
+        #head #logo{
+            margin-right: 4.7%;
+        }
+
+        #konten{
+            margin-left: 70px;
+        }
+
+        thead th{
+            font-size: 14px;
+        }
+
+        #jumlahpengunjung{
+            padding: 10px;
+            width: 100%;
+            height: 100%;
+            background-color: #FFFFFF;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px 1px #6d6d6d19;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+        }
+
+        #jumlahpengunjung span{
+            margin-top: 20px
+        }
+
+        #jumlahpengunjung p{
+            font-size: 40px;
+            margin-top: -5px;
+            font-weight: 600;
+        }
+
+        #jumlahkue{
+            padding: 10px;
+            width: 100%;
+            height: 100%;
+            background-color: #FFFFFF;
+            border-radius: 20px;
+            margin-left: 30px;
+            box-shadow: 0px 0px 10px 1px #6d6d6d19;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            color: #FBDB6D;
+        }
+
+        #jumlahkue span{
+            margin-top: 20px
+        }
+
+        #jumlahkue p{
+            font-size: 40px;
+            margin-top: -5px;
+            font-weight: 600;
+            color: #FBDB6D;
+        }
+
+        #konten{
+            margin-left: 70px;
+        }
+    
+        #head{
+            width: 90%;
+            margin-left: 5%;
+        }
+    
+        .areatabel{
+            display: flex;
+            justify-content: center;
+        }
+    
+        .tabel{
+            width: 90%;
+            border-radius: 20px 20px 20px 20px;
+            box-shadow: 0px 0px 10px 2px #00000016;
+            font-size: 20px;
+            background-color: #FFFFFF;
+            margin-top: 20px;
+        }   
+    
+        .contain{
+            width: 90%;
+            margin-left: 5%;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            display: flex;
+        }
+        
+        .edit{
+            margin-left: 1%;
+        }
+    
+        .edit button{
+            cursor: pointer;
+        }
+    
+        #editbtn{
+            width: 100px;
+            height: 38px;
+            border: none;
+            border-radius: 5px;
+            background-color: #FF78C4;
+            color: #FFF8F9;
+            transition: all ease-in-out 0.2s;
+        }
+    
+        #editbtn:hover{
+            width: 100px;
+            height: 38px;
+            border: none;
+            border-radius: 5px;
+            background-color: #FBDB6D;
+            color: #FFF8F9;
+        }
+    
+        #dropdownbtn{
+            background-color: #FF78C4; color: #FFF8F9;
+            transition: all ease-in-out 0.2s;
+        }
+    
+        #dropdownbtn:hover{
+            background-color: #FBDB6D; color: #FFF8F9;
+        }
+
+        #dropdown{
+            margin-left: 5.1%;
+        }
+
+        .containdropdown{
+            width: 200%;
+            height: 100px;
+            margin-left: 1000px;
+        }
+    
+        #dropdown{
+            background-color: #FF78C4; color: #FFF8F9;
+            transition: all ease-in-out 0.2s;
+            height: 40px;
+        }
+    
+        #dropdown:hover{
+            background-color: #FBDB6D; color: #FFF8F9;
+        }
+
+        @media (max-width: 430px) {
+            thead th{
+                font-size: 9px;
+            }
+        }

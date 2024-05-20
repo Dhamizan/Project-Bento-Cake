@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bento Cake</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/css/adminlogin.css">
+  </head>
+  <body>
+    <div class="boxlogin">
+      <form class="form" action="/Admin/Dashboard" method="post">
+        <img class="welcome" src="/images/Welcome.png" alt="">
+        <div class="login">
+            <img src="" alt="">
+            <input type="text" placeholder="Username" name="username" id="username">
+        </div>
+        <div class="login">
+            <img src="" alt="">
+            <input type="password" placeholder="Password" name="password" id="password">
+        </div>
+        <div class="cekbox">
+          <input class="ceklis" type="checkbox" onclick="showHidePassword()"><p class="teksceklis">Tampilkan Password</p>
+        </div>
+        <input class="submit" type="submit" value="Sign IN">
+      </form>
+    </div>
+    <script src="/js/home.js"></script>
+  </body>
+</html> 

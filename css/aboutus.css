@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+    *, html{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root{
+        --main-color : blue;
+        --second-color : purple;
+        --body-color : gray;
+        --main-font : 'Poppins', sans-serif;
+        --heading-font : 'Poppins', sans-serif;
+    }
+
+    body{
+        width: 100%;
+        font-family: var(--main-font);
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+        background-color: #ffffff;
+        color: #FF65C2;
+    }
+    /* Navbar */
+
+    #logobento{
+        margin-left: 9%;
+    }
+
+    #logobento img{
+        width: 180px;
+    }
+
+    .navbar-toggler{
+        margin-right: 15%;
+    }
+
+    .container-fluid{
+        width: 100%;
+        top: 0;
+        position: fixed;
+        background-color: #ffffff;
+        color: #ffffff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    #menu{
+        width: 40px;
+    }
+
+    #offcanvasNavbar{
+        width: 40%;
+        height: 100%;
+        background-color: transparent;
+        margin-right: -10%;
+    }
+
+    #gambarlabelbento{
+        margin-left: 10px;
+        width: 160px;
+    }
+
+    #gambarlabelbento img{
+        width: 100%;
+    }
+
+    .close{
+        margin-right: 10px;
+        border: none;
+        border-color: none;
+        background-color: transparent;
+    }
+
+    .close img{
+        width: 40px;
+    }
+
+    .offcanvas-body {
+        margin-right: 25%;
+        background-color: #ffffff;
+    }
+
+    .offcanvas-body li{
+        font-size: 90%;
+        font-weight: bold;
+    }
+
+    .nav-link{
+        margin-left: 20px;
+        color: #FF65C2;
+        transition: 0.30s ease-in-out;
+        text-align: justify;
+    }
+
+    .nav-link:hover{
+        color: #FBDB6D;
+        font-size: 102%;
+        transition: 0.30s ease-in-out;
+    }
+
+    .navbar-nav .nav-link.active{
+        color: #FBDB6D;
+    }
+
+    .nav-item{
+        margin-right: 10px;
+    }
+
+    #navbarSupportedContent{
+        flex-direction: row-reverse;
+        margin-right: 140px;
+    }
+
+    .navbar-toggler{
+        color: transparent;
+        border-color: transparent;
+        margin-left: -6%;
+    }
+
+    span .navbar-toggler-icon{
+        width: 10%;
+        height: 100%;
+    }
+
+    .navbar-toggler-icon{
+        width: 1.8em;
+        height: 1.8em;
+    }
+    
+    /*About Us*/
+
+    .about{
+        margin-top: 120px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .isiabout{
+        width: 100%;
+        text-align: justify;
+        color: #535353;
+    }
+
+    #judulabt{
+        margin-top: 0px;
+        width: 57%;
+    }
+
+    #modelabt{
+        width: 40%;
+        float: left;
+        padding-right: 30px;
+    }
+
+    .videoaboutus{
+        margin: 100px 0px 40px 0px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-radius: 20px
+    }
+
+    .videoaboutus video{
+        width: 100%;
+        height: auto;
+        margin-left: -25px;
+    }
+
+    /*Akhir*/
+
+    .infoend{
+        margin-top: 3%;
+    }
+
+    .infoend img{
+        width: 100%;
+    }
+
+    /*Animasi Transisi*/
+    .reveal{
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: all 2s ease;
+    }
+    
+    .reveal.active{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+
+    @media (max-width: 992px){
+        /*navbar*/
+
+        .container-fluid{
+            width: 100%;
+            top: 0;
+            position: fixed;
+            background-color: #ffffff;
+            color: #ffffff;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        
+        #menu{
+            width: 40px;
+        }
+        
+        #offcanvasNavbar{
+            width: 60%;
+            height: 100%;
+            background-color: transparent;
+            margin-right: -15%;
+        }
+
+        .offcanvas-header{
+            margin-top: 0px;
+        }
+        
+        #gambarlabelbento{
+            margin-left: 10px;
+            width: 160px;
+        }
+        
+        #gambarlabelbento img{
+            width: 100%;
+        }
+        
+        .close{
+            margin-right: 10px;
+            border: none;
+            border-color: none;
+            background-color: transparent;
+        }
+        
+        .close img{
+            width: 40px;
+        }
+        
+        .offcanvas-body {
+            margin-right: 25%;
+            background-color: #ffffff;
+        }
+        
+        .offcanvas-body li{
+            font-size: 75%;
+            font-weight: bold;
+        }
+        
+        .nav-link{
+            margin-left: 20px;
+            color: #FF65C2;
+            transition: 0.30s ease-in-out;
+            text-align: justify;
+            border-bottom: 1px solid #FF65C2;
+            border-width: 1px;
+        }
+        
+        .nav-link:hover{
+            color: #FBDB6D;
+            font-size: 105%;
+            transition: 0.30s ease-in-out;
+            border-bottom: 1px solid #FBDB6D;
+        }
+        
+        .navbar-nav .nav-link.active{
+            color: #FBDB6D;
+            border-bottom: 1px solid #FBDB6D;
+        }
+        
+        .nav-item{
+            margin-right: 10px;
+        }
+        
+        #navbarSupportedContent{
+            flex-direction: row-reverse;
+            margin-right: 140px;
+        }
+        
+        .navbar-toggler{
+            color: transparent;
+            border-color: transparent;
+            margin-left: -6%;
+        }
+        
+        span .navbar-toggler-icon{
+            width: 10%;
+            height: 100%;
+        }
+        
+        .navbar-toggler-icon{
+            width: 1.8em;
+            height: 1.8em;
+
+        }
+    }
+
